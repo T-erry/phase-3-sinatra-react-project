@@ -1,23 +1,19 @@
 import React from 'react'
-import Book from './Book'
+import Book from '../BookList/Book'
 
 
-function HomePage({books}) {
-    
+function HomePage({ books }) {
 const bookArray = books.map((book)=>{
     return( 
     <Book key={book.id} book={book}/>
     )
 })
-
   return (
     
   <div className="row">
-     <div className="col-sm-4">
      {bookArray}
      </div>
     
-  </div>
 
   )
 }

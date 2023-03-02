@@ -1,0 +1,21 @@
+#review
+{
+    background-color: #804674;
+    padding: 2%;
+    color: #F5FFC9;
+}
+
+#reviewCard
+{
+    background-color: #804674;
+}
+
+#viewBook
+{
+    background-color: #A86464;
+}
+#review button{
+    padding: 18px 10px;
+    margin-right: 4em;
+
+}

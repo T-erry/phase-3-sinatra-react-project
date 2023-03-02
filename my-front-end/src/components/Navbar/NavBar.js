@@ -14,7 +14,7 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
          < Link to="/" className="btn btn-primary m-2"> List Books </Link>
-         < Link to="/createbooks" class="btn btn-primary m-2"> Create Books </Link>
+         < Link to="/createbook" class="btn btn-primary m-2"> Create Books </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
