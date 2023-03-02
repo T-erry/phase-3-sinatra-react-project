@@ -29,7 +29,7 @@ puts "🌱 Seeding data..."
         price: 750
     )
 
-5.times do
+10.times do
     Review.create(
         star_rating: rand(0..5),
         comment: Faker::Lorem.sentence,

@@ -2,7 +2,6 @@
 {
     background-color: #804674;
     padding: 2%;
-    color: #F5FFC9;
 }
 
 #reviewCard
@@ -13,9 +12,4 @@
 #viewBook
 {
     background-color: #A86464;
-}
-#review button{
-    padding: 18px 10px;
-    margin-right: 4em;
-
 }
