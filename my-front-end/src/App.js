@@ -5,7 +5,7 @@ import HomePage from "./components/Pages/HomePage";
 import NavBar from "./components/Navbar/NavBar";
 import { useEffect, useState } from "react";
 import CreateBooks from "./components/CreateBook/CreateBook";
-import  EditBook from "./components/EditBook/EditBook"
+import  EditBook from "./components/UpdateBook/UpdateBook"
 
 function App() {
   const [books, SetBooks] = useState([])
@@ -27,8 +27,7 @@ function App() {
     <Route path="/home" element={<HomePage books={books}/>} />
     <Route path="/createbook" element={<CreateBooks/>} />
     <Route path="/book/:id"  element={<Review />} />
-    <Route path="/editbook/:id"  element={<EditBook />} />
-    <Route path="/deletebook/:id"  element={<EditBook />} />
+    <Route path="/updatebook/:id"  element={<EditBook />} />
       </Routes>
     </BrowserRouter>
   

@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
     book = Book.find(params[:id])
     book.to_json
   end
-  patch "/books/update/:id" do 
+  patch "/books/updatebook/:id" do 
     book = Book.find(params[:id])
     book.update(
       image: params[:image],

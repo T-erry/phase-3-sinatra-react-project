@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
-function EditBook() {
+function UpdateBook() {
   const [image, setImage] = useState('');
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
@@ -27,7 +27,7 @@ function EditBook() {
   const handleSubmit = event => {
     event.preventDefault();
 
-    fetch(`http://localhost:9292/books/update/${id}`, {
+    fetch(`http://localhost:9292/books/updatebook/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -91,11 +91,11 @@ function EditBook() {
     />
     <div className="d-flex justify-content-center">
       <button type="submit" className="btn btn-primary">
-        Edit Book
+        update Book
       </button>
     </div>
   </form>
   );
 }
 
-export default EditBook;
+export default UpdateBook;

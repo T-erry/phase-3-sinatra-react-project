@@ -42,9 +42,9 @@ function Review() {
                 <h4 className="card-title">Title: {book.title}</h4>
                 <p className="card-text">Author: {book.author}</p>
                 <p className="card-text">Price: {book.price}</p>
-                <Link to={`/editbook/${id}`} id="addButtons" className="btn btn-secondary" style={{fontSize:'2rem', marginBottom: '50px'}}>Edit Book </Link>
+                <Link to={`/updatebook/${id}`} id="addButtons" className="btn btn-secondary" style={{fontSize:'2rem', marginBottom: '50px'}}>update Book </Link>
                 <button type="submit" 
-                className="btn btn-secondary"
+                className="btn btn-secondary m-4"
                 onClick={handleDeleteClick}
                 >
                  Delete Book
